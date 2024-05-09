@@ -1,3 +1,4 @@
+import MealItem from "./meal-item";
 import classes from "./meals-grid.module.css";
 
 function MealsGrid({ meals }) {
@@ -5,7 +6,7 @@ function MealsGrid({ meals }) {
     <ul className={classes.meals}>
       {meals.map((meal) => (
         <li key={meal.id}>
-          <MealsGrid {...meal} />
+          <MealItem {...meal} />
         </li>
       ))}
     </ul>
