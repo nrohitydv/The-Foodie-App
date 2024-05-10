@@ -26,6 +26,7 @@ function MealPicker({ label, name }) {
     <div className={classes.picker}>
       <label htmlFor={name}>{label}</label>
       <div className={classes.controls}>
+        {/* to preview image */}
         <div className={classes.preview}>
           {!pickedImage && <p>No Image Picked yet.</p>}
           {pickedImage && <Image src={pickedImage} alt="" fill />}
